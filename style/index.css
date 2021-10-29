@@ -35,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey; 
+    /* border:1px solid grey;  */
     text-align: center;
 }
 
@@ -48,6 +48,7 @@ header{
 h1{
     font-size: 5rem;
     font-family: 'Noto Serif', serif;
+    padding:1.5rem;
 }
 h2{
     font-size: 3rem;
@@ -56,10 +57,8 @@ nav .menu a{
     display: inline-block;
     font-size: 2rem;
     padding: 1%;
-    color: #fff;
-    background-color: palevioletred;
-    border-radius: 10%;
     text-decoration: none;
+    color: #fff;
 
 }
 .text{
@@ -67,6 +66,7 @@ nav .menu a{
 }
 p{
     font-size: 2.5rem;
+    padding:1.5rem;
     
 }
 .info{
@@ -87,11 +87,11 @@ p{
     width:80%;
     margin: auto;
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
     align-items:center;
 }
 .container img{
-    width:10%;
+    width:16%;
     height:70vh;
 }
 .container p{
@@ -99,18 +99,32 @@ p{
     text-align: left;
     font-size: 2rem;
 }
-#contact{
-    background-color: peachpuff;
-    height: 20rem;
-    width: 100%;
-}
-#contact h2{
-    height: 10%;
-    border:2px solid grey; 
-    padding:1% 2%;
-    background-color: plum;
-    width:10%;
+/* .other-container{
+    display: flex;
+    flex-flow: row wrap;
+    height: 80vh;
+} */
+footer{
     text-align: center;
-    margin: auto;
-
+    padding:2%;
+    background-color: peachpuff;
+}
+button{
+    border-radius: 1rem;
+    padding:2%;
+    font-size: 2rem;
+    color: white;
+    background-color: orchid;
+    border:pink solid 1px;
+}
+button:hover{
+    transition: 1s;
+    color: orchid;
+    background-color: white;
+    border:pink solid 2px;
+}
+footer button a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
 }
